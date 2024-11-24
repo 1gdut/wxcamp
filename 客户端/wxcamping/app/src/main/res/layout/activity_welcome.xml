@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_page"
+    tools:context=".view.activity.WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/welcome_login"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="登录"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/welcome_register"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:text="注册"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_register"
+        app:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

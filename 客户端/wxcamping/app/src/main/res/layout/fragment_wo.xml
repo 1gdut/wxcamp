@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    tools:context=".view.fragment.WoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#FEFEFE">
+
+        <ImageView
+            android:id="@+id/wo_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/chat_myicon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="111"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@id/wo_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/wo_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="微信号：\n222"
+            android:textColor="#B3A2A2"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toRightOf="@id/wo_icon"
+            app:layout_constraintTop_toBottomOf="@id/wo_name" />
+
+        <ImageView
+            android:id="@+id/wo_ewm"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ewm"
+            app:layout_constraintLeft_toRightOf="@id/wo_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintLeft_toRightOf="@id/wo_ewm"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
